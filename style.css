@@ -1,7 +1,16 @@
 :root {
-    font-family: Arial, Helvetica, sans-serif;
+    --custom-boxShadow:0 10px 20px rgba(0, 0, 0, 0.783), 0 6px 6px rgba(0,0,0,0.783); 
 }
 
-h1 {
+#banner {
     text-align: center;
+    background-color: rgba(1, 209, 232, 0.954);
+    padding: 1em;
+    font-family: 'Abril Fatface', Arial, Helvetica, sans-serif;
+    box-shadow: var(--custom-boxShadow);
+    text-transform: capitalize;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
