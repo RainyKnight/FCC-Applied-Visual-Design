@@ -1,5 +1,6 @@
 :root {
     --custom-boxShadow:0 10px 20px rgba(0, 0, 0, 0.783), 0 6px 6px rgba(0,0,0,0.783); 
+    --spooky-orange: #f90;
 }
 
 #banner {
@@ -13,4 +14,19 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 24px;
+    font-weight: 200;
+}
+
+#offsetPractice {
+    position: relative;
+    left: 50%;
+}
+
+/* pseudo-class selector */
+a:hover {
+    color: var(--spooky-orange);
 }
