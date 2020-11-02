@@ -1,11 +1,12 @@
 :root {
     --custom-boxShadow:0 10px 20px rgba(0, 0, 0, 0.783), 0 6px 6px rgba(0,0,0,0.783); 
     --spooky-orange: #f90;
+    --up-arrow: 10px;
 }
 #navbar {
     position: fixed;
     text-align: center;
-    background-color: white;
+    background-color: black;
     padding: 5px;
     top: 0px;
     left: 0px;
@@ -26,7 +27,8 @@ button:hover {
 
 
 #content {
-    margin-top: 10%;
+    margin: 50px 60px 0% 0%;
+    right: 10%;
 }
 
 #banner {
@@ -50,15 +52,15 @@ p {
 
 #offsetPractice {
     position: fixed;
-    bottom: 1em;
-    right: 2em;
+    bottom: var(--up-arrow);
+    right: var(--up-arrow);
+    font-size: 50px;
+    background-color: black;
+    border-radius: 50%;
+    height: 1em;
 }
 
 /* pseudo-class selector */
 a:hover {
     color: var(--spooky-orange);
-}
-
-a:visited {
-    color: greenyellow;
 }
