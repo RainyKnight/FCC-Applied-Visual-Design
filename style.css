@@ -6,7 +6,7 @@
 
 nav {
     position: fixed;
-    text-align: center;
+    margin: auto;
     background-color: var(--ui-color);
     padding: 15px;
     top: 0px;
@@ -38,9 +38,11 @@ button:hover {
 
 #content {
     margin: 70px;
+    margin-bottom: 20px;
     right: 10%;
     border-style: dashed;
     padding: 10px;
+    background-color: hsl(360, 0%, 100%);
 }
 
 #banner {
@@ -61,6 +63,11 @@ body {
 p {
     line-height: 24px;
     font-weight: 200;
+}
+
+h3 {
+    /* (Hue, Saturation, Lightness) formation */
+    color: hsl(360, 0%, 0%);
 }
 
 #upBtn {
