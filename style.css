@@ -1,12 +1,13 @@
 :root {
     --custom-boxShadow: 0 10px 20px rgba(0, 0, 0, 0.783), 0 6px 6px rgba(0, 0, 0, 0.783);
     --spooky-orange: #f90;
+    --ui-color: rgb(28, 28, 28);
 }
 
 nav {
     position: fixed;
     text-align: center;
-    background-color: rgb(28, 28, 28);
+    background-color: var(--ui-color);
     padding: 15px;
     top: 0px;
     left: 0px;
@@ -64,10 +65,13 @@ p {
 
 #upBtn {
     position: fixed;
-    bottom: 10px;
+    bottom: 14px;
     font-size: 50px;
 }
 
 #footer {
     text-align: center;
+    background-color: var(--ui-color);
+    padding: 0.5em;
+    color: white;
 }
