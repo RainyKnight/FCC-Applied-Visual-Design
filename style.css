@@ -21,6 +21,16 @@ nav {
     box-shadow: 0px 0px 5px;
 }
 
+/* pseudo-class selector */
+
+a:hover {
+    color: var(--spooky-orange);
+}
+
+a {
+    color: cyan;
+}
+
 button:hover {
     background-color: rgb(92, 92, 92);
 }
@@ -58,12 +68,6 @@ p {
     font-size: 50px;
 }
 
-/* pseudo-class selector */
-
-a:hover {
-    color: var(--spooky-orange);
-}
-
-a {
-    color: cyan;
+#footer {
+    text-align: center;
 }
