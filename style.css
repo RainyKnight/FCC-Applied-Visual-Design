@@ -1,8 +1,8 @@
 :root {
-    --custom-boxShadow:0 10px 20px rgba(0, 0, 0, 0.783), 0 6px 6px rgba(0,0,0,0.783); 
+    --custom-boxShadow: 0 10px 20px rgba(0, 0, 0, 0.783), 0 6px 6px rgba(0, 0, 0, 0.783);
     --spooky-orange: #f90;
-    --up-arrow: 20px;
 }
+
 nav {
     position: fixed;
     text-align: center;
@@ -25,9 +25,8 @@ button:hover {
     background-color: rgb(92, 92, 92);
 }
 
-
 #content {
-    margin: 60px 70px 0% 0%;
+    margin: 70px;
     right: 10%;
     border-style: dashed;
     padding: 10px;
@@ -56,14 +55,11 @@ p {
 #upBtn {
     position: fixed;
     bottom: 10px;
-    right: var(--up-arrow);
     font-size: 50px;
-    background-color: black;
-    border-radius: 50%;
-    height: 1em;
 }
 
 /* pseudo-class selector */
+
 a:hover {
     color: var(--spooky-orange);
 }
