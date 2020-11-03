@@ -49,6 +49,7 @@ button:hover {
     text-align: center;
     font-size: 64px;
     background-color: rgba(94, 94, 94, 0.742);
+    background: linear-gradient(205deg, white, linen);
     padding: 10px;
     margin: 24px;
     font-family: 'Abril Fatface', Arial, Helvetica, sans-serif;
