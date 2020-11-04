@@ -99,6 +99,36 @@ h3 {
     margin: 2.3em;
 }
 
+#stripes4 {
+    background: repeating-linear-gradient(45deg, black 0px, black 10px, white 10px, white 20px);
+    border-style: solid;
+    width: 15em;
+    height: 15em;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    ;
+}
+
+#stripes5 {
+    background: repeating-linear-gradient(135deg, white 0px, white 10px, black 10px, black 20px);
+    border-style: solid;
+    width: 15em;
+    height: 15em;
+    opacity: 50%;
+    z-index: 2;
+}
+
+#circleArt {
+    background-color: black;
+    border-style: solid;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    z-index: 3;
+    margin: 2em;
+}
+
 #upBtn {
     position: fixed;
     bottom: 14px;
