@@ -1,7 +1,8 @@
 :root {
     --custom-boxShadow: 0 10px 20px rgba(0, 0, 0, 0.783), 0 6px 6px rgba(0, 0, 0, 0.783);
     --spooky-orange: #f90;
-    --ui-color: rgb(28, 28, 28);
+    --ui-color: #1c1c1c;
+    --curved-edges: 5px;
 }
 
 nav {
@@ -18,8 +19,9 @@ nav {
 
 .navbarLink {
     padding: 5px 5% 5px 5%;
+    margin: 0.5em;
     background-color: rgb(58, 58, 58);
-    box-shadow: 0px 0px 5px;
+    border-radius: var(--curved-edges);
 }
 
 a {
@@ -37,6 +39,7 @@ a:hover {
 @keyframes navButtons {
     100% {
         color: cyan;
+        box-shadow: 0px 0px 5px;
     }
 }
 
@@ -56,9 +59,11 @@ a:hover {
     background: linear-gradient(205deg, white, linen);
     padding: 10px;
     margin: 24px;
+    margin-bottom: 40px;
     font-family: 'Abril Fatface', Arial, Helvetica, sans-serif;
     box-shadow: var(--custom-boxShadow);
     text-transform: capitalize;
+    border-radius: var(--curved-edges);
 }
 
 body {
