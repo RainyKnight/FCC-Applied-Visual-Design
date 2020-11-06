@@ -22,23 +22,27 @@ nav {
     box-shadow: 0px 0px 5px;
 }
 
+a {
+    color: gray;
+}
+
 /* pseudo-class selector */
 
 a:hover {
-    color: var(--spooky-orange);
+    animation: forwards;
+    animation-name: navButtons;
+    animation-duration: 0.5s;
 }
 
-a {
-    color: cyan;
-}
-
-button:hover {
-    background-color: rgb(92, 92, 92);
+@keyframes navButtons {
+    100% {
+        color: cyan;
+    }
 }
 
 #content {
-    margin: 70px;
-    margin-bottom: 20px;
+    margin: 75px;
+    margin-bottom: em;
     right: 10%;
     border-style: dashed;
     padding: 10px;
@@ -81,7 +85,6 @@ h3::after {
     content: " |";
     color: cyan;
 }
-
 
 #stripes {
     background: repeating-linear-gradient( 135deg, white 0px, white 40px, red 40px, black 80px);
@@ -142,6 +145,7 @@ h3::after {
 }
 
 #upBtn {
+    color: gray;
     position: fixed;
     bottom: 0.3em;
     right: 0.4em;
@@ -150,7 +154,17 @@ h3::after {
 }
 
 #upBtn:hover {
-    transform: scale(1.1);
+    color: gray;
+    animation-name: colorChange;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorChange {
+    100% {
+        color: cyan;
+        transform: scale(1.1);
+    }
 }
 
 #footer {
