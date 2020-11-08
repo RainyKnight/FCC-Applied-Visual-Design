@@ -3,6 +3,7 @@
     --spooky-orange: #f90;
     --ui-color: #1c1c1c;
     --curved-edges: 5px;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -15,6 +16,7 @@ nav {
     width: 100%;
     border-color: black;
     border-style: solid;
+    z-index: 99;
 }
 
 .navbarLink {
