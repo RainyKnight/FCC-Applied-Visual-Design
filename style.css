@@ -45,7 +45,7 @@ a:hover {
 
 #content {
     margin: 75px;
-    margin-bottom: em;
+    margin-bottom: 2em;
     right: 10%;
     border-style: dashed;
     padding: 10px;
@@ -96,6 +96,7 @@ h3::after {
     height: 20em;
     width: 20em;
     margin: auto;
+    margin-top: 30px;
     margin-bottom: 30px;
     border-style: solid;
     border-width: 1em;
@@ -149,6 +150,43 @@ h3::after {
     margin: 2em;
 }
 
+.box {
+    position: relative;
+    background-color: var(--ui-color);
+    margin: auto;
+    margin-top: 1px;
+    width: 20%;
+    height: 50px;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.leftMove {
+    right: 0%;
+    animation-name: leftMove;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes leftMove {
+    100% {
+        right: 40%;
+    }
+}
+
+.rightMove {
+    left: 0%;
+    animation-name: rightMove;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rightMove {
+    100% {
+        left: 40%;
+    }
+}
+
 #upBtn {
     color: gray;
     position: fixed;
@@ -173,9 +211,11 @@ h3::after {
 }
 
 #footer {
-    position: static;
+    position: relative;
     text-align: center;
+    left: 0px;
     bottom: 0px;
+    width: 100%;
     background-color: var(--ui-color);
     padding: 0.6em;
     margin: 0px;
