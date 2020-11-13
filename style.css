@@ -214,7 +214,7 @@ h3::after {
     }
 }
 
-#footer {
+footer {
     /* TODO: Affix footer to bottom with Flexbox when I learn it */
     position: relative;
     text-align: center;
